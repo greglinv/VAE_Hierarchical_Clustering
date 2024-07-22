@@ -4,7 +4,6 @@ import tensorflow as tf
 from tensorflow.keras import layers, models
 from sklearn.cluster import KMeans
 
-
 def hierarchical_clustering(similarity_matrix):
     distance_matrix = 1 - np.array(similarity_matrix)
     Z = linkage(distance_matrix, 'ward')
